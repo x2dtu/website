@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+dark-blue {
+  background-color: #2e4382;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
