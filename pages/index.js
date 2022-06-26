@@ -25,6 +25,7 @@ export default function Home() {
         <Introduction />
         <About />
         <Experience />
+        <div style={{ minHeight: "100vh" }}></div>
       </main>
     </>
   );

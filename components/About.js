@@ -1,12 +1,9 @@
-import { Box, Grid, List, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
-import AboutCard from "./AboutCard";
 import { Animator, MoveIn } from "react-scroll-motion";
 import HokieBird from "../images/hokie-bird.png";
-import ThinkingHead2 from "../images/thinking-head-2.png";
 import ThinkingHead from "../images/thinking-head.png";
 import Tree from "../images/tree.png";
-import Computer from "../images/computer.png";
 import Card from "./Card";
 
 const About = () => {
@@ -30,8 +27,10 @@ const About = () => {
         sx={{
           p: "1em",
           pb: 0,
+          WebkitTextStrokeWidth: "2px",
+          WebkitTextStrokeColor: "black",
+          fontWeight: 400,
           color: colorScheme.color,
-          // fontWeight: "400",
         }}
       >
         About Me 🔎
@@ -56,6 +55,7 @@ const About = () => {
                     Bachelor's Degree in Spring 2023 and will stay an extra year
                     to complete my Master's in Science."
           title="Who I am"
+          type="about"
         />
         <Card
           image={ThinkingHead}
@@ -67,16 +67,18 @@ const About = () => {
                   love with the subject. I continue to code because it gives me the 
                   chance to struggle, grow, learn, and have fun."
           title="Why I code"
+          type="about"
         />
         <Card
           image={Tree}
-          alt="Computer"
+          alt="Tree"
           text="When I'm not coding, I can often be found having fun with friends,
                 spending time with family, reading, and learning new programming
                 languages. I'm a big fan of coding personal projects in my free time
                 which not only benefit my overall coding proficiency and knowledge
                 but also my enjoyment for the craft."
           title="How I live"
+          type="about"
         />
       </Stack>
     </Box>

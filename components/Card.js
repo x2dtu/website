@@ -1,28 +1,32 @@
-import { Typography, Box, Divider, Stack, Paper } from "@mui/material";
-import Image from "next/image";
+import { Typography, Box, Stack, Paper } from "@mui/material";
 import React from "react";
 
-const colorScheme = {
+const aboutColorScheme = {
   backgroundColor: "#2e4382",
   color: "beige",
-  title: "beige",
+  outline: "beige",
+};
+const experienceColorScheme = {
+  backgroundColor: "white",
+  color: "black",
+  outline: "gray",
 };
 
-const Card = ({ title, text, alt, image }) => {
+const Card = ({ title, text, alt, image, type, secondary, small }) => {
+  const colorScheme =
+    type == "about"
+      ? aboutColorScheme
+      : type == "experience"
+      ? experienceColorScheme
+      : null;
   return (
-    // <Paper elevation={10} sx={{ overflow: "hidden" }}>
     <Paper
       elevation={10}
       sx={{
         backgroundColor: colorScheme.backgroundColor,
-        border: `3px solid ${colorScheme.color}`,
-        borderRadius: "5%",
-        p: "1em",
-        pt: "0.5em",
-        maxWidth: "55vh",
-        minWidth: "55vh",
-        outline: "3px solid black",
+        border: `3px solid ${colorScheme.outline}`,
       }}
+      className={`${type}-card`}
     >
       <Stack
         direction="row"
@@ -31,22 +35,24 @@ const Card = ({ title, text, alt, image }) => {
         sx={{ textAlign: "center" }}
       >
         <Typography
-          sx={{ color: colorScheme.title }}
-          className="title"
-          variant="h3"
+          sx={{ color: colorScheme.color }}
+          className={`${type}-title`}
+          variant={small ? "h4" : "h3"}
         >
           {title}
         </Typography>
         <img alt={alt} src={image.src} className="card-image" />
       </Stack>
-      <hr className="divider" />
+      {secondary && (
+        <Box textAlign="center">
+          <Typography variant="button">{secondary}</Typography>
+        </Box>
+      )}
+      <hr className={`${type}-divider divider`} />
       <Box>
         <Typography
           sx={{
             color: colorScheme.color,
-            // pl: "0.75em",
-            // display: "inline",
-            // float: "left",
           }}
           className="card-text"
         >
@@ -54,7 +60,6 @@ const Card = ({ title, text, alt, image }) => {
         </Typography>
       </Box>
     </Paper>
-    // </Paper>
   );
 };
 
