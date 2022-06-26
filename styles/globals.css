@@ -24,3 +24,34 @@ dark-blue {
   flex-direction: column;
   position: relative;
 }
+
+.title {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+}
+
+.card-image {
+  position: relative;
+  /* max-width: min(20%, 75px); */
+  max-height: min(80px);
+}
+
+.divider {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: beige;
+  height: 0.3em;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 0.15em;
+}
+
+.card-text {
+  font-size: 1.2em;
+  /* color: black; */
+  /* font-weight: bold; */
+  /* -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black; */
+}

@@ -5,14 +5,14 @@ import GarminLogo from "../images/garmin-logo.png";
 // import Virginia from "../images/virginia.png";
 
 const Experience = () => {
-  console.log(GarminLogo);
   return (
     <Box
       sx={{
-        position: "absolute",
-        height: "100%",
-        width: "100%",
+        // position: "absolute",
+        // height: "100%",
+        // width: "100%",
         backgroundColor: "white",
+        minHeight: "100vh",
       }}
     >
       <Typography variant="h2" sx={{ p: "1em" }}>

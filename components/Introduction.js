@@ -17,34 +17,35 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import { Animator, Fade } from "react-scroll-motion";
+import Fade from "react-reveal/Fade";
 
 const Introduction = () => {
   return (
-    <Animator animation={Fade(0.5, 1)}>
-      <Grid
-        container
-        sx={{
-          p: "1em",
-          backgroundColor: "lightblue",
-          position: "absolute",
-          height: "100%",
-        }}
-        wrap="nowrap"
-      >
-        <Grid item xs={6} textAlign="center">
-          <Typography
-            variant="h1"
-            sx={{
-              fontWeight: "regular",
-              paddingTop: "30%",
-              paddingBottom: "11.25%",
-              color: "#242d49",
-            }}
-          >
-            <em style={{ paddingRight: "3.75%" }}>Hi!</em> I'm Michael
-          </Typography>
-          <Stack direction="row" spacing={10} justifyContent="center">
+    <Grid
+      container
+      sx={{
+        p: "1em",
+        backgroundColor: "lightblue",
+        // position: "absolute",
+        // height: "100%",
+        minHeight: "100vh",
+      }}
+      wrap="nowrap"
+    >
+      <Grid item xs={6} textAlign="center">
+        <Typography
+          variant="h1"
+          sx={{
+            fontWeight: "regular",
+            paddingTop: "30%",
+            paddingBottom: "11.25%",
+            color: "#242d49",
+          }}
+        >
+          <em style={{ paddingRight: "3.75%" }}>Hi!</em> I'm Michael
+        </Typography>
+        <Grid container justifyContent="space-evenly">
+          <Grid item xs={6} sm={3}>
             <Tooltip
               title={<Typography variant="body1">View my LinkedIn</Typography>}
               arrow
@@ -62,6 +63,8 @@ const Introduction = () => {
                 />
               </IconButton>
             </Tooltip>
+          </Grid>
+          <Grid item xs={6} sm={3}>
             <Tooltip
               title={
                 <Typography variant="body1">
@@ -80,6 +83,8 @@ const Introduction = () => {
                 />
               </IconButton>
             </Tooltip>
+          </Grid>
+          <Grid item xs={6} sm={3}>
             <Tooltip
               title={<Typography variant="body1">Call or Text Me</Typography>}
               arrow
@@ -95,6 +100,8 @@ const Introduction = () => {
                 />
               </IconButton>
             </Tooltip>
+          </Grid>
+          <Grid item xs={6} sm={3}>
             <Tooltip
               title={<Typography variant="body1">Email Me</Typography>}
               arrow
@@ -110,25 +117,25 @@ const Introduction = () => {
                 />
               </IconButton>
             </Tooltip>
-          </Stack>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Image
-            src={portrait}
-            style={{
-              alignSelf: "center",
-              borderRadius: "20%",
-            }}
-          />
+          </Grid>
         </Grid>
       </Grid>
-    </Animator>
+      <Grid
+        item
+        xs={6}
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Image
+          src={portrait}
+          style={{
+            alignSelf: "center",
+            borderRadius: "20%",
+          }}
+        />
+      </Grid>
+    </Grid>
   );
 };
 
