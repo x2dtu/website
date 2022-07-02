@@ -8,12 +8,10 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import ExperienceCard from "./ExperienceCard";
+import VT from "../images/vt.png";
 import GarminLogo from "../images/garmin-logo.png";
-import HokieBird from "../images/hokie-bird.png";
-import ThinkingHead from "../images/thinking-head.png";
-import Tree from "../images/tree.png";
-import LinkCard from "./LinkCard";
+import ExperienceCard from "./ExperienceCard";
+import Anchor from "./Anchor";
 // import Link from "@mui/material";
 // import Virginia from "../images/virginia.png";
 
@@ -25,17 +23,18 @@ const Experience = () => {
         minHeight: "100vh",
       }}
     >
-      <Typography variant="h2" sx={{ p: "1em" }}>
+      <Anchor id="experience" />
+      <Typography variant="h2" className="page-title" gutterBottom>
         Experience 🧠
       </Typography>
       <Stack
         direction="row"
         justifyContent="space-evenly"
-        sx={{ p: "4em", pt: "2em", flexWrap: "wrap", rowGap: "4em" }}
+        sx={{ pb: "4em", pt: "2em", flexWrap: "wrap", rowGap: "4em" }}
       >
-        <LinkCard
-          image={ThinkingHead}
-          alt="Thinking Head"
+        <ExperienceCard
+          image={VT}
+          alt="Virginia Tech Department of Computer Science"
           text="I have always been curious and
                   inquisitive, and these traits have only increased my interest for
                   solving challenging problems. Naturally, when I took my first
@@ -46,12 +45,12 @@ const Experience = () => {
           secondary="Undergraduate Research Lead"
           type="experience"
           href="#one"
-          small
+          dates="Fall 2021 - Present"
         />
 
-        <LinkCard
-          image={Tree}
-          alt="Computer"
+        <ExperienceCard
+          image={GarminLogo}
+          alt="Garmin"
           text="When I'm not coding, I can often be found having fun with friends,
                 spending time with family, reading, and learning new programming
                 languages. I'm a big fan of coding personal projects in my free time
@@ -61,6 +60,7 @@ const Experience = () => {
           secondary="Embedded Software Engineer Intern"
           href="#two"
           type="experience"
+          dates="Summer 2022"
         />
       </Stack>
     </Box>

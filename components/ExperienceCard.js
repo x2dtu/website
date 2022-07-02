@@ -1,40 +1,70 @@
-import React from "react";
-import {
-  ListItem,
-  ListItemAvatar,
-  Paper,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Typography, Box, Stack, Paper } from "@mui/material";
+import Link from "next/link";
 
-const ExperienceCard = ({ image, alt, text }) => {
+const colorScheme = {
+  backgroundColor: "white",
+  color: "black",
+  outline: "gray",
+};
+
+const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
+  const small = title.length > 10;
   return (
-    <ListItem sx={{ pb: "2em" }}>
+    <Link href={href}>
       <Paper
         elevation={10}
         sx={{
-          backgroundColor: "LightGray",
-          p: "0.75em",
-          display: "flex",
+          backgroundColor: colorScheme.backgroundColor,
+          border: `3px solid ${colorScheme.outline}`,
+          cursor: "pointer",
+          position: "relative",
         }}
+        className="experience-card link-card"
       >
-        <ListItemAvatar sx={{ minWidth: "6%" }}>
-          <div style={{ position: "relative", height: "100%" }}>
-            <Image alt={alt} src={image} layout="fill" objectFit="contain" />
-          </div>
-        </ListItemAvatar>
-        <ListItemText
-          primary={
-            <Typography
-              sx={{ color: "black", fontSize: "1.2em", pl: "0.75em" }}
-            >
-              {text}
-            </Typography>
-          }
-        />
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          sx={{
+            textAlign: "center",
+            height: "15%",
+            position: "relative",
+            mb: 1,
+          }}
+        >
+          <Typography
+            sx={{ color: colorScheme.color }}
+            className="experience-title"
+            variant={small ? "h4" : "h3"}
+          >
+            {title}
+          </Typography>
+          <img alt={alt} src={image.src} className="experience-image" />
+        </Stack>
+        {secondary && (
+          <Box textAlign="center">
+            <Typography variant="button">{secondary}</Typography>
+          </Box>
+        )}
+        {secondary && (
+          <Box textAlign="center">
+            <Typography variant="button">{dates}</Typography>
+          </Box>
+        )}
+        <hr className="experience-divider divider" />
+        <Box>
+          <Typography
+            sx={{
+              color: colorScheme.color,
+            }}
+            className="card-text"
+          >
+            {text}
+          </Typography>
+        </Box>
       </Paper>
-    </ListItem>
+    </Link>
   );
 };
 
-export default ExperienceCard;
+export default LinkCard;

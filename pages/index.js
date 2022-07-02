@@ -7,6 +7,9 @@ import dynamic from "next/dynamic";
 import Introduction from "../components/Introduction";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import DrawerAppBar from "../components/DrawerAppBar";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function Home() {
   // const ScrollContainer = dynamic(() =>
@@ -22,10 +25,12 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main style={{ backgroundColor: "black" }}>
+        <DrawerAppBar />
         <Introduction />
         <About />
         <Experience />
-        <div style={{ minHeight: "100vh" }}></div>
+        <Skills />
+        <Projects />
       </main>
     </>
   );

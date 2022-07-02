@@ -1,10 +1,11 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Animator, MoveIn } from "react-scroll-motion";
+// import { Animator, MoveIn } from "react-scroll-motion";
 import HokieBird from "../images/hokie-bird.png";
 import ThinkingHead from "../images/thinking-head.png";
 import Tree from "../images/tree.png";
-import Card from "./Card";
+import AboutCard from "./AboutCard";
+import Anchor from "./Anchor";
 
 const About = () => {
   const colorScheme = { backgroundColor: "#2e4382", color: "beige" };
@@ -14,24 +15,21 @@ const About = () => {
   return (
     <Box
       sx={{
-        //
         backgroundColor: "#242d49",
-        p: "1em",
-        overflow: "auto",
         minHeight: "100vh",
       }}
     >
+      <Anchor id="about-me" />
       <Typography
         gutterBottom
         variant="h2"
         sx={{
-          p: "1em",
-          pb: 0,
           WebkitTextStrokeWidth: "2px",
           WebkitTextStrokeColor: "black",
           fontWeight: 400,
           color: colorScheme.color,
         }}
+        className="page-title"
       >
         About Me 🔎
       </Typography>
@@ -43,10 +41,10 @@ const About = () => {
       {/* </Animator> */}
       <Stack
         direction="row"
-        justifyContent="space-between"
-        sx={{ p: "4em", pt: "2em", flexWrap: "wrap", rowGap: "4em" }}
+        justifyContent="space-evenly"
+        sx={{ pt: "2em", pb: "4em", flexWrap: "wrap", rowGap: "4em" }}
       >
-        <Card
+        <AboutCard
           image={HokieBird}
           alt="Hokie Bird"
           text="I am a 20-year-old junior Virginia Tech student studying
@@ -55,9 +53,8 @@ const About = () => {
                     Bachelor's Degree in Spring 2023 and will stay an extra year
                     to complete my Master's in Science."
           title="Who I am"
-          type="about"
         />
-        <Card
+        <AboutCard
           image={ThinkingHead}
           alt="Thinking Head"
           text="I have always been curious and
@@ -67,9 +64,8 @@ const About = () => {
                   love with the subject. I continue to code because it gives me the 
                   chance to struggle, grow, learn, and have fun."
           title="Why I code"
-          type="about"
         />
-        <Card
+        <AboutCard
           image={Tree}
           alt="Tree"
           text="When I'm not coding, I can often be found having fun with friends,
@@ -78,7 +74,6 @@ const About = () => {
                 which not only benefit my overall coding proficiency and knowledge
                 but also my enjoyment for the craft."
           title="How I live"
-          type="about"
         />
       </Stack>
     </Box>

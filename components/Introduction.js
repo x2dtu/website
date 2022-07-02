@@ -18,20 +18,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Fade from "react-reveal/Fade";
+import Anchor from "./Anchor";
 
 const Introduction = () => {
   return (
     <Grid
       container
       sx={{
-        p: "1em",
         backgroundColor: "lightblue",
-        // position: "absolute",
-        // height: "100%",
         minHeight: "100vh",
       }}
       wrap="nowrap"
     >
+      <Anchor id="home" />
       <Grid item xs={6} textAlign="center">
         <Typography
           variant="h1"
