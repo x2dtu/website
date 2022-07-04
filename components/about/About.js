@@ -1,11 +1,11 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 // import { Animator, MoveIn } from "react-scroll-motion";
-import HokieBird from "../images/hokie-bird.png";
-import ThinkingHead from "../images/thinking-head.png";
-import Tree from "../images/tree.png";
+import HokieBird from "../../images/hokie-bird.png";
+import ThinkingHead from "../../images/thinking-head.png";
+import Tree from "../../images/tree.png";
 import AboutCard from "./AboutCard";
-import Anchor from "./Anchor";
+import Anchor from "../Anchor";
 
 const About = () => {
   const colorScheme = { backgroundColor: "#2e4382", color: "beige" };

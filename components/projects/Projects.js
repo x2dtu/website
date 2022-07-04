@@ -1,14 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import Anchor from "./Anchor";
+import Anchor from "../Anchor";
 import ProjectsCard from "./ProjectsCard";
-import Chess from "../images/chess.PNG";
-import Calculator from "../images/calculator.png";
-import PathFinder from "../images/path-finder.png";
-import Java from "../images/java.png";
-import ReactImg from "../images/react.png";
-import Python from "../images/python.png";
-import Rust from "../images/rust.png";
+import Chess from "../../images/chess.PNG";
+import Calculator from "../../images/calculator.png";
+import PathFinder from "../../images/path-finder.png";
+import Java from "../../images/java.png";
+import ReactImg from "../../images/react.png";
+import Python from "../../images/python.png";
+import Rust from "../../images/rust.png";
 
 const projects = [
   {

@@ -3,13 +3,12 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import dynamic from "next/dynamic";
 import Introduction from "../components/Introduction";
-import About from "../components/About";
-import Experience from "../components/Experience";
+import About from "../components/about/About";
+import Experience from "../components/experience/Experience";
 import DrawerAppBar from "../components/DrawerAppBar";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
+import Skills from "../components/skills/Skills";
+import Projects from "../components/projects/Projects";
 
 export default function Home() {
   // const ScrollContainer = dynamic(() =>
@@ -24,8 +23,8 @@ export default function Home() {
         <title>Michael Atkins Website</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main style={{ backgroundColor: "black" }}>
-        <DrawerAppBar />
+      <DrawerAppBar />
+      <main>
         <Introduction />
         <About />
         <Experience />

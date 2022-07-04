@@ -8,12 +8,12 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import VT from "../images/vt.png";
-import GarminLogo from "../images/garmin-logo.png";
+import VT from "../../images/vt.png";
+import GarminLogo from "../../images/garmin-logo.png";
 import ExperienceCard from "./ExperienceCard";
-import Anchor from "./Anchor";
+import Anchor from "../Anchor";
 // import Link from "@mui/material";
-// import Virginia from "../images/virginia.png";
+// import Virginia from "../../images/virginia.png";
 
 const Experience = () => {
   return (
@@ -44,7 +44,7 @@ const Experience = () => {
           title="VT CS Department"
           secondary="Undergraduate Research Lead"
           type="experience"
-          href="#one"
+          href="experiences/research-lead"
           dates="Fall 2021 - Present"
         />
 
@@ -58,7 +58,7 @@ const Experience = () => {
                 but also my enjoyment for the craft."
           title="Garmin"
           secondary="Embedded Software Engineer Intern"
-          href="#two"
+          href="experiences/garmin-intern"
           type="experience"
           dates="Summer 2022"
         />
