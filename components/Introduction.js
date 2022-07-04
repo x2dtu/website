@@ -43,7 +43,7 @@ const Introduction = () => {
         >
           <em style={{ paddingRight: "3.75%" }}>Hi!</em> I'm Michael
         </Typography>
-        <Grid container justifyContent="space-evenly">
+        <Grid container justifyContent="center">
           <Grid item xs={6} sm={3}>
             <Tooltip
               title={<Typography variant="body1">View my LinkedIn</Typography>}
@@ -75,40 +75,6 @@ const Introduction = () => {
             >
               <IconButton href="https://github.com/x2dtu" target="_blank">
                 <GitHubIcon
-                  sx={{
-                    fontSize: "2.5em",
-                    color: "#242d49",
-                  }}
-                />
-              </IconButton>
-            </Tooltip>
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <Tooltip
-              title={<Typography variant="body1">Call or Text Me</Typography>}
-              arrow
-              enterDelay={50}
-            >
-              <IconButton href="tel: 804-929-7307" target="_blank">
-                <PhoneIcon
-                  fontSize="large"
-                  sx={{
-                    fontSize: "2.5em",
-                    color: "#242d49",
-                  }}
-                />
-              </IconButton>
-            </Tooltip>
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <Tooltip
-              title={<Typography variant="body1">Email Me</Typography>}
-              arrow
-              enterDelay={50}
-            >
-              <IconButton href="mailto: michaelga@vt.edu" target="_blank">
-                <EmailIcon
-                  fontSize="large"
                   sx={{
                     fontSize: "2.5em",
                     color: "#242d49",

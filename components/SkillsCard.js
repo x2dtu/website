@@ -1,8 +1,7 @@
-import { Box, Paper } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import React from "react";
 
 const SkillsCard = ({ name, image, objectFit, small, medium }) => {
-  console.log(name, small, medium);
   return (
     <Box
       sx={{
@@ -39,17 +38,7 @@ const SkillsCard = ({ name, image, objectFit, small, medium }) => {
         className="skills-image-text"
         elevation={10}
       >
-        {/* <Box
-          p={1}
-          mt={2}
-          sx={{
-            backgroundColor: "#353232",
-            width: "55%",
-            borderRadius: 10,
-          }}
-        > */}
-        {name}
-        {/* </Box> */}
+        <Typography>{name}</Typography>
       </Paper>
     </Box>
   );

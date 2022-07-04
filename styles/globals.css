@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --skills-card-size: 30vh;
 }
@@ -105,6 +109,16 @@ dark-blue {
   justify-content: center;
 }
 
+.projects-card {
+  border-radius: 15%;
+  width: 45vh;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease all;
+}
+
 .experience-card:hover {
   background-color: rgb(196, 196, 196);
 }
@@ -130,6 +144,20 @@ dark-blue {
   height: var(--skills-card-size);
   border-radius: 50%;
   transition: 0.15s ease all;
+}
+
+.projects-image {
+  width: 35vh;
+  height: 35vh;
+  transition: 0.15s ease all;
+}
+
+.projects-card:hover>img {
+  filter: brightness(75%);
+}
+
+.projects-card:hover {
+  transform: scale(1.02);
 }
 
 .skills-small-image {
@@ -186,3 +214,25 @@ margin: 0 auto; */
   color: white;
   background-color: #353232;
 }
+
+.colorPicker {
+  background-color: #1b1b1b;
+  color: #343434;
+}
+
+.projects-image-text {
+  width: 75%;
+  /* transition: 0.2s ease all; */
+}
+
+/* .projects-image-text:hover~a>.projects-card {
+  transform: scale(1.02);
+}
+
+.projects-image-text:hover~a>.projects-card>img {
+  filter: brightness(75%);
+}
+
+.projects-image-text:hover {
+  transform: scale(1.02);
+} */
