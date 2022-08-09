@@ -91,8 +91,8 @@ const Introduction = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <Image
-          src={portrait}
+        <img
+          src={portrait.src}
           style={{
             alignSelf: "center",
             borderRadius: "20%",
