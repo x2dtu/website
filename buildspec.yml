@@ -19,11 +19,8 @@ phases:
     commands:
       - echo Building...
       - npm run build
-  post_build:
-    commands:
-      - cd dist
 artifacts:
   files:
     - "**/*"
-  discard-paths: yes # no is default
+  discard-paths: no # no is default
   base-directory: dist
