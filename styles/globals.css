@@ -37,6 +37,21 @@ dark-blue {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   font-weight: bold;
+  color: beige;
+}
+
+.about-page-title {
+  font-weight: 500;
+}
+
+.title-color {
+  color: white;
+}
+
+.title-buttons {
+  font-size: 2.5em;
+  stroke: black;
+  stroke-width: 0.4px;
 }
 
 .card-image {
@@ -70,10 +85,6 @@ dark-blue {
 
 .card-text {
   font-size: 1.2em;
-  /* color: black; */
-  /* font-weight: bold; */
-  /* -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black; */
 }
 
 .focused {
@@ -86,7 +97,6 @@ dark-blue {
   padding: 1em;
   padding-top: 0.5em;
   max-width: 55vh;
-  min-width: 55vh;
   outline: 3px solid black;
 }
 
@@ -95,13 +105,11 @@ dark-blue {
   padding: 1em;
   padding-top: 0.5em;
   max-width: 60vh;
-  min-width: 60vh;
   outline: 3px solid black;
 }
 
 .skills-card {
   border-radius: 50%;
-  /* padding: 1em; */
   width: var(--skills-card-size);
   height: var(--skills-card-size);
   display: flex;
@@ -136,9 +144,6 @@ dark-blue {
   padding-top: 1em;
 }
 
-/* .skills-page {
-  background-color: #290429;
-} */
 .skills-image {
   width: var(--skills-card-size);
   height: var(--skills-card-size);
@@ -163,44 +168,20 @@ dark-blue {
 .skills-small-image {
   width: 20vh;
   height: 20vh;
-  /* border-radius: 50%; */
   transition: 0.15s ease all;
 }
 
 .skills-med-image {
   width: 25vh;
   height: 25vh;
-  /* border-radius: 50%; */
   transition: 0.15s ease all;
 }
 
-/* .skills-image:hover {
-  filter: brightness(80%);
-} */
 
 .skills-subtitle {
   color: white;
-  /* padding: 0.5em 2em; */
   border-bottom: 1px solid white;
-  /* border: 1px double white;
-border-radius: 15px;
-position: relative;
-margin: 0 auto; */
 }
-
-/* .skills-subtitle::after {
-  content: "";
-  background: none;
-  display: block;
-  position: absolute;
-  top: 1.5px;
-  left: 1.5px;
-  right: 1.5px;
-  bottom: 1.5px;
-  pointer-events: none;
-  border: 1px solid white;
-  border-radius: 12px;
-} */
 
 .skills-subtitle-container {
   display: flex;

@@ -3,7 +3,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Introduction from "../components/Introduction";
+import Introduction from "../components/introduction/Introduction";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
 import DrawerAppBar from "../components/DrawerAppBar";

@@ -12,8 +12,6 @@ import VT from "../../public/images/vt.png";
 import GarminLogo from "../../public/images/garmin-logo.png";
 import ExperienceCard from "./ExperienceCard";
 import Anchor from "../Anchor";
-// import Link from "@mui/material";
-// import Virginia from "../../public/images/virginia.png";
 
 const Experience = () => {
   return (
@@ -24,7 +22,11 @@ const Experience = () => {
       }}
     >
       <Anchor id="experience" />
-      <Typography variant="h2" className="page-title" gutterBottom>
+      <Typography
+        sx={{ typography: { sm: "h2", xs: "h3" } }}
+        className="page-title"
+        gutterBottom
+      >
         Experience 🧠
       </Typography>
       <Stack

@@ -23,11 +23,7 @@ const AboutCard = ({ title, text, alt, image }) => {
         alignItems="center"
         sx={{ textAlign: "center" }}
       >
-        <Typography
-          sx={{ color: colorScheme.color }}
-          className="about-title"
-          variant="h3"
-        >
+        <Typography className="about-title" variant="h3">
           {title}
         </Typography>
         <img alt={alt} src={image.src} className="card-image" />

@@ -61,9 +61,11 @@ const Skills = () => {
       <Anchor id="skills" />
       <Typography
         className="page-title"
-        sx={{ color: "white" }}
+        sx={{
+          color: "white",
+          typography: { sm: "h2", xs: "h3" },
+        }}
         gutterBottom
-        variant="h2"
       >
         Skills ⚙️
       </Typography>

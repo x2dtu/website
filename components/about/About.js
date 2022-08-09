@@ -8,10 +8,6 @@ import AboutCard from "./AboutCard";
 import Anchor from "../Anchor";
 
 const About = () => {
-  const colorScheme = { backgroundColor: "#2e4382", color: "beige" };
-  //#242d49
-  //#303e69 -> which background color?
-  //#38487a
   return (
     <Box
       sx={{
@@ -22,14 +18,10 @@ const About = () => {
       <Anchor id="about-me" />
       <Typography
         gutterBottom
-        variant="h2"
+        className="page-title about-title about-page-title"
         sx={{
-          WebkitTextStrokeWidth: "2px",
-          WebkitTextStrokeColor: "black",
-          fontWeight: 400,
-          color: colorScheme.color,
+          typography: { sm: "h2", xs: "h3" },
         }}
-        className="page-title"
       >
         About Me 🔎
       </Typography>

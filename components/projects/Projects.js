@@ -9,6 +9,7 @@ import Java from "../../public/images/java.png";
 import ReactImg from "../../public/images/react.png";
 import Python from "../../public/images/python.png";
 import Rust from "../../public/images/rust.png";
+import portrait from "../../public/images/intro_pic.png";
 
 const projects = [
   {
@@ -64,7 +65,7 @@ const projects = [
   },
   {
     name: "This Website!",
-    image: ReactImg.src,
+    image: portrait.src,
     link: "https://github.com/x2dtu/website",
     langImage: ReactImg,
     langAlt: "React",
@@ -73,17 +74,16 @@ const projects = [
 ];
 
 const Projects = () => {
-  //#191919
-  //#343434
-  //#454444
   return (
     <Box sx={{ minHeight: "100vh", backgroundColor: "#343434" }}>
       <Anchor id="projects" />
       <Typography
         className="page-title"
-        sx={{ color: "white" }}
         gutterBottom
-        variant="h2"
+        sx={{
+          color: "white",
+          typography: { sm: "h2", xs: "h3" },
+        }}
       >
         Personal Projects 🛠️
       </Typography>
