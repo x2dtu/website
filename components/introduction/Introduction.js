@@ -37,7 +37,9 @@ const Introduction = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Anchor id="home" />
+      <div style={{ position: "absolute", top: 0 }}>
+        <Anchor id="home" />
+      </div>
       <Stack textAlign="center">
         <Typography
           variant="h3"
