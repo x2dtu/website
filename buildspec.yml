@@ -19,6 +19,7 @@ phases:
     commands:
       - echo Building...
       - npm run build
+      - ls
   # post_build:
   #   commands:
   #     - cd dist
