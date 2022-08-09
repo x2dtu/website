@@ -1,8 +1,8 @@
 version: 0.2
 
-env:
-  variables:
-    NODE_ENV: "production"
+# env:
+#   variables:
+#     NODE_ENV: "production"
 
 phases:
   install:
@@ -14,11 +14,14 @@ phases:
     commands:
       - echo Installing Dependencies...
       - npm install
-      - mkdir dist
+      # - mkdir dist
   build:
     commands:
       - echo Building...
       - npm run build
+  # post_build:
+  #   commands:
+  #     - cd dist
 artifacts:
   files:
     - "**/*"
