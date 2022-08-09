@@ -1,9 +1,9 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 // import { Animator, MoveIn } from "react-scroll-motion";
-import HokieBird from "../../images/hokie-bird.png";
-import ThinkingHead from "../../images/thinking-head.png";
-import Tree from "../../images/tree.png";
+import HokieBird from "../../public/images/hokie-bird.png";
+import ThinkingHead from "../../public/images/thinking-head.png";
+import Tree from "../../public/images/tree.png";
 import AboutCard from "./AboutCard";
 import Anchor from "../Anchor";
 

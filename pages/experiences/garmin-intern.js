@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import ExperiencePageComp from "../../components/experience/ExperiencePageComp";
-import Garmin from "../../images/garmin-logo.png";
+import Garmin from "../../public/images/garmin-logo.png";
 
 const GarminIntern = () => {
   const title = "Embedded Software Engineering Intern";
@@ -9,28 +9,12 @@ const GarminIntern = () => {
   const company = "";
   const description = (
     <Typography>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-      exercitationem inventore consequatur eum numquam dignissimos maxime natus
-      praesentium enim distinctio, debitis nihil, pariatur velit consequuntur?
-      Ducimus illo ratione, reprehenderit cupiditate vel magni voluptate quis
-      laborum blanditiis maiores consequatur perferendis repellat dicta,
-      distinctio nam maxime deleniti voluptas impedit temporibus sunt iusto!
-      Illum dolores sed neque, praesentium eveniet animi maiores molestiae
-      quisquam, veniam quis, aliquid delectus ab at mollitia et odio suscipit
-      reiciendis voluptas officia velit natus dignissimos. Cupiditate, nihil
-      placeat odio inventore, laborum reiciendis nostrum iure sit error
-      voluptatem et minima quod? Repellendus hic quas qui omnis est sed eaque,
-      neque accusamus. Unde dolorem et architecto ipsam commodi error
-      voluptatibus asperiores. Voluptate iusto, illum ipsam ratione harum,
-      voluptatem dicta quasi veniam perferendis odio dignissimos optio deserunt
-      atque, earum quas illo ex rem inventore magnam. Dolore reprehenderit
-      mollitia quibusdam assumenda officia, ipsam iste? Consectetur quos cum
-      omnis, beatae officiis nemo ipsam culpa reprehenderit nihil modi inventore
-      odit adipisci, quae iure laboriosam dolore id necessitatibus quia, minima
-      quasi deleniti. Iure impedit veniam officiis at assumenda dicta
-      reprehenderit, libero enim sed illo corporis in inventore! Minus eaque
-      quod atque reiciendis vero. Neque ducimus rerum illo aspernatur, quibusdam
-      nostrum tempora eum, inventore maiores, error ut.
+      My first internship was with Garmin where I worked with their Auto OEM
+      team, specifically on the augmeneted reality cameras and android auto
+      interfaces for 2022 and 2023 BMW lineups. This internship gave me
+      comprehensive exposure to embedded systems programming with limited
+      processing and memory contraints as well as multi-threading and all the
+      benefits and hazards that come with it.
     </Typography>
   );
   return (

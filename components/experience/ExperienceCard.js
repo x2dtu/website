@@ -56,6 +56,7 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
           <Typography
             sx={{
               color: colorScheme.color,
+              pb: 1,
             }}
             className="card-text"
           >

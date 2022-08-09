@@ -2,13 +2,13 @@ import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Anchor from "../Anchor";
 import ProjectsCard from "./ProjectsCard";
-import Chess from "../../images/chess.PNG";
-import Calculator from "../../images/calculator.png";
-import PathFinder from "../../images/path-finder.png";
-import Java from "../../images/java.png";
-import ReactImg from "../../images/react.png";
-import Python from "../../images/python.png";
-import Rust from "../../images/rust.png";
+import Chess from "../../public/images/chess.PNG";
+import Calculator from "../../public/images/calculator.png";
+import PathFinder from "../../public/images/path-finder.png";
+import Java from "../../public/images/java.png";
+import ReactImg from "../../public/images/react.png";
+import Python from "../../public/images/python.png";
+import Rust from "../../public/images/rust.png";
 
 const projects = [
   {
@@ -55,7 +55,8 @@ const projects = [
   },
   {
     name: "Ray Tracer",
-    image: Rust.src,
+    image:
+      "https://user-images.githubusercontent.com/82241006/183513190-b30fd2b6-c17e-4934-beca-ecad3d24229a.png",
     link: "https://github.com/x2dtu/ray-tracer",
     langImage: Rust,
     langAlt: "Rust",

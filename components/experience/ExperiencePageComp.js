@@ -9,7 +9,7 @@ const ExperiencePageComp = ({
   dates,
   description,
 }) => {
-  const elevation = 2;
+  const elevation = 0;
   const borderRadius = 4;
   return (
     <>
@@ -53,6 +53,7 @@ const ExperiencePageComp = ({
                 gutterBottom
                 mr={company ? 3 : 0}
                 pt={0.5}
+                fontWeight="bold"
               >
                 {company}
               </Typography>
@@ -77,7 +78,13 @@ const ExperiencePageComp = ({
             className="experience-image-text"
             elevation={elevation}
           >
-            <Typography variant="button" gutterBottom mr={3} pt={0.5}>
+            <Typography
+              variant="button"
+              gutterBottom
+              mr={3}
+              pt={0.5}
+              fontWeight="bold"
+            >
               {dates}
             </Typography>
           </Paper>
@@ -90,7 +97,7 @@ const ExperiencePageComp = ({
             borderRadius,
           }}
           className="experience-image-text"
-          elevation={elevation + 1}
+          elevation={elevation + 2}
         >
           {description}
         </Paper>

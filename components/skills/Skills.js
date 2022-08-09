@@ -2,18 +2,18 @@ import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Anchor from "../Anchor";
 import SkillsCard from "./SkillsCard";
-import Javascript from "../../images/javascript.webp";
-import ReactImg from "../../images/react.png";
-import Python from "../../images/python.png";
-import Java from "../../images/java.png";
-import C from "../../images/c.png";
-import CPlusPlus from "../../images/c++.png";
-import Rust from "../../images/rust.png";
-import CSS from "../../images/css.png";
-import Git from "../../images/git.png";
-import Docker from "../../images/docker.png";
-import Linux from "../../images/linux.png";
-import Jupyter from "../../images/jupyter.png";
+import Javascript from "../../public/images/javascript.webp";
+import ReactImg from "../../public/images/react.png";
+import Python from "../../public/images/python.png";
+import Java from "../../public/images/java.png";
+import C from "../../public/images/c.png";
+import CPlusPlus from "../../public/images/c++.png";
+import Rust from "../../public/images/rust.png";
+import CSS from "../../public/images/css.png";
+import Git from "../../public/images/git.png";
+import Docker from "../../public/images/docker.png";
+import Linux from "../../public/images/linux.png";
+import Jupyter from "../../public/images/jupyter.png";
 
 const languages = [
   {
