@@ -17,7 +17,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import Anchor from "./Anchor";
 
 const Introduction = () => {
