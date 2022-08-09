@@ -14,17 +14,13 @@ phases:
     commands:
       - echo Installing Dependencies...
       - npm install
-      # - mkdir dist
   build:
     commands:
       - echo Building...
       - npm run build
       - ls out
-  # post_build:
-  #   commands:
-  #     - cd dist
 artifacts:
   files:
     - "**/*"
   # discard-paths: no # no is default
-  # base-directory: dist
+  base-directory: out
