@@ -7,7 +7,7 @@ import ReactImg from "../../public/images/react.png";
 import Python from "../../public/images/python.png";
 import Java from "../../public/images/java.png";
 import C from "../../public/images/c.png";
-import CPlusPlus from "../../public/images/c++.png";
+import CPlusPlus from "../../public/images/cplusplus.png";
 import Rust from "../../public/images/rust.png";
 import CSS from "../../public/images/css.png";
 import Git from "../../public/images/git.png";
@@ -52,10 +52,6 @@ const technologies = [
 ];
 
 const Skills = () => {
-  //350535
-  //3c0a3c
-  //2e042e
-  //290429
   return (
     <Box sx={{ minHeight: "100vh", backgroundColor: "#290429" }}>
       <Anchor id="skills" />
