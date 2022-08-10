@@ -22,7 +22,7 @@ const ExperiencePageComp = ({
         flexDirection="column"
         alignItems="center"
       >
-        <Box display="flex" flexWrap="wrap">
+        <Box display="flex" flexWrap="wrap" textAlign="center">
           <Typography
             variant="h2"
             gutterBottom
