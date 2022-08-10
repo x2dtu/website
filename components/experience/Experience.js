@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  ButtonBase,
-  List,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import VT from "../../public/images/vt.png";
 import GarminLogo from "../../public/images/garmin-logo.png";

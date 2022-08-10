@@ -1,23 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Grid,
-  IconButton,
-  Stack,
-  SvgIcon,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-// import portrait from "../public/images/pictureofme1-removebg-preview.png";
 import portrait from "../../public/images/intro_pic.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
 // import Fade from "react-reveal/Fade";
 import Anchor from "../Anchor";
 import IntroductionButton from "./IntroductionButton";
