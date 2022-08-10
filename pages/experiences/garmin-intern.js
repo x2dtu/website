@@ -10,10 +10,10 @@ const GarminIntern = () => {
   const description = (
     <Typography>
       My first internship was with Garmin where I worked with their Auto OEM
-      team, specifically on the augmeneted reality cameras and android auto
+      team, specifically on the augmented reality cameras and android auto
       interfaces for 2022 and 2023 BMW lineups. This internship gave me
       comprehensive exposure to embedded systems programming with limited
-      processing and memory contraints as well as multi-threading and all the
+      processing and memory constraints as well as multi-threading and all the
       benefits and hazards that come with it.
     </Typography>
   );

@@ -11,6 +11,7 @@ const nextConfig = {
       "/experiences/garmin-intern": { page: "/experiences/garmin-intern" },
     };
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
