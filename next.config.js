@@ -4,7 +4,7 @@ const nextConfig = {
   // images: {
   //   loader: "akamai",
   // },
-  assetPrefix: ".",
+  // assetPrefix: ".",
 };
 
 module.exports = nextConfig;

@@ -19,6 +19,7 @@ phases:
       - echo Building...
       - npm run build
       - ls out
+      - rm -rf out/images/
 artifacts:
   files:
     - "**/*"
