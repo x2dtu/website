@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
@@ -9,6 +10,10 @@ const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -16,7 +21,9 @@ export default function MyApp(props) {
       </Head>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
-      <Component {...pageProps} />
+      <div style={{ visibility: mounted ? "visible" : "hidden" }}>
+        <Component {...pageProps} />
+      </div>
     </CacheProvider>
   );
 }
