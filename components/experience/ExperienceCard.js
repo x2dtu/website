@@ -18,6 +18,7 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
           border: `3px solid ${colorScheme.outline}`,
           cursor: "pointer",
           position: "relative",
+          mx: { md: 0, sm: 2, xs: 2 },
         }}
         className="experience-card link-card"
       >

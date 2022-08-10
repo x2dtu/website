@@ -20,6 +20,8 @@ phases:
       - npm run build
       - ls out
       - rm -rf out/images/
+      - rm -rf out/404/
+      - rm -rf out/404.html/
 artifacts:
   files:
     - "**/*"

@@ -14,6 +14,7 @@ const AboutCard = ({ title, text, alt, image }) => {
       sx={{
         backgroundColor: colorScheme.backgroundColor,
         border: `3px solid ${colorScheme.outline}`,
+        mx: { md: 0, sm: 2, xs: 2 },
       }}
       className="about-card"
     >
