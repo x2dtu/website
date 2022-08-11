@@ -1,6 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
-// import { Animator, MoveIn } from "react-scroll-motion";
 import HokieBird from "../../public/images/hokie-bird.png";
 import ThinkingHead from "../../public/images/thinking-head.png";
 import Tree from "../../public/images/tree.png";
@@ -26,12 +25,6 @@ const About = () => {
       >
         About Me 🔎
       </Typography>
-      {/* <Animator animation={MoveIn(-100, 0)}> */}
-      {/* </Animator> */}
-      {/* <Animator animation={MoveIn(100, 0)}> */}
-      {/* </Animator> */}
-      {/* <Animator animation={MoveIn(-100, 0)}> */}
-      {/* </Animator> */}
       <Stack
         direction="row"
         justifyContent="space-evenly"

@@ -7,7 +7,6 @@ import "@fontsource/roboto/700.css";
 import portrait from "../../public/images/intro_pic.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-// import Fade from "react-reveal/Fade";
 import Anchor from "../Anchor";
 import IntroductionButton from "./IntroductionButton";
 

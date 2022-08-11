@@ -57,12 +57,7 @@ const ExperiencePageComp = ({
               >
                 {company}
               </Typography>
-              <img
-                src={companyImg.src}
-                alt={company}
-                height="50px"
-                // style={{ margin: "20px 0" }}
-              />
+              <img src={companyImg.src} alt={company} height="50px" />
             </Stack>
           </Paper>
         </Box>

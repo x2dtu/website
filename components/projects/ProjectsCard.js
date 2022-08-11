@@ -2,9 +2,6 @@ import React from "react";
 import { Box, Paper, Stack, Typography } from "@mui/material";
 
 const ProjectsCard = ({ name, image, langImage, link, langAlt, objectFit }) => {
-  //#454444
-  //#585858
-  //#191919
   return (
     <Box
       sx={{

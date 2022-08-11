@@ -11,12 +11,6 @@ import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 
 export default function Home() {
-  // const ScrollContainer = dynamic(() =>
-  //   import("react-scroll-motion").then((mod) => mod.ScrollContainer)
-  // );
-  // const ScrollPage = dynamic(() =>
-  //   import("react-scroll-motion").then((mod) => mod.ScrollPage)
-  // );
   return (
     <>
       <Head>

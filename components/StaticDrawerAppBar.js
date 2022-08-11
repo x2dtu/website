@@ -1,11 +1,9 @@
 import {
   Box,
-  Divider,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Typography,
   AppBar,
   Toolbar,
   IconButton,
