@@ -64,14 +64,16 @@ dark-blue {
   height: 50px;
 }
 
-@media all and (min-width: 1536px) {
+@media all and (min-width: 2000px) {
   .card-image {
     max-height: 120px;
   }
+
   .project-image {
     height: 90px;
   }
 }
+
 .experience-image {
   width: 25%;
 }
@@ -220,6 +222,3 @@ dark-blue {
 .projects-image-text {
   width: 75%;
 }
-
-
-
