@@ -19,6 +19,7 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
           cursor: "pointer",
           position: "relative",
           mx: { md: 0, sm: 2, xs: 2 },
+          maxWidth: { xs: "60vh", xl: "45vh" },
         }}
         className="experience-card link-card"
       >
@@ -34,9 +35,12 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
           }}
         >
           <Typography
-            sx={{ color: colorScheme.color }}
             className="experience-title"
-            variant={small ? "h4" : "h3"}
+            fontWeight="bold"
+            sx={{
+              typography: { xl: "h2", xs: small ? "h4" : "h3" },
+              fontSize: { xl: small ? "3em" : "4em" },
+            }}
           >
             {title}
           </Typography>
@@ -44,12 +48,16 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
         </Stack>
         {secondary && (
           <Box textAlign="center">
-            <Typography variant="button">{secondary}</Typography>
+            <Typography variant="button" sx={{ fontSize: { xl: "1.1em" } }}>
+              {secondary}
+            </Typography>
           </Box>
         )}
         {secondary && (
           <Box textAlign="center">
-            <Typography variant="button">{dates}</Typography>
+            <Typography variant="button" sx={{ fontSize: { xl: "1.1em" } }}>
+              {dates}
+            </Typography>
           </Box>
         )}
         <hr className="experience-divider divider" />
@@ -58,8 +66,11 @@ const LinkCard = ({ title, text, alt, image, secondary, dates, href }) => {
             sx={{
               color: colorScheme.color,
               pb: 1,
+              fontSize: {
+                xl: "1.4em",
+                xs: "1.2em",
+              },
             }}
-            className="card-text"
           >
             {text}
           </Typography>

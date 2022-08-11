@@ -60,6 +60,18 @@ dark-blue {
   max-height: min(80px);
 }
 
+.project-image {
+  height: 50px;
+}
+
+@media all and (min-width: 1536px) {
+  .card-image {
+    max-height: 120px;
+  }
+  .project-image {
+    height: 90px;
+  }
+}
 .experience-image {
   width: 25%;
 }
@@ -67,6 +79,7 @@ dark-blue {
 .about-divider {
   background-color: beige;
   outline-color: black;
+  width: 100%;
 }
 
 .experience-divider {
@@ -104,7 +117,7 @@ dark-blue {
   border-radius: 5%;
   padding: 1em;
   padding-top: 0.5em;
-  max-width: 60vh;
+  /* max-width: 60vh; */
   outline: 3px solid black;
 }
 
@@ -140,7 +153,6 @@ dark-blue {
 }
 
 .page-title {
-  padding-left: 1em;
   padding-top: 1em;
 }
 
@@ -197,7 +209,6 @@ dark-blue {
 }
 
 .experience-image-text {
-  /* background-color: rgb(250, 250, 250); */
   background-color: white;
 }
 
@@ -208,17 +219,7 @@ dark-blue {
 
 .projects-image-text {
   width: 75%;
-  /* transition: 0.2s ease all; */
 }
 
-/* .projects-image-text:hover~a>.projects-card {
-  transform: scale(1.02);
-}
 
-.projects-image-text:hover~a>.projects-card>img {
-  filter: brightness(75%);
-}
 
-.projects-image-text:hover {
-  transform: scale(1.02);
-} */

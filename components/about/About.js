@@ -13,6 +13,7 @@ const About = () => {
       sx={{
         backgroundColor: "#242d49",
         minHeight: "100vh",
+        textAlign: "center",
       }}
     >
       <Anchor id="about-me" />
@@ -20,7 +21,7 @@ const About = () => {
         gutterBottom
         className="page-title about-title about-page-title"
         sx={{
-          typography: { sm: "h2", xs: "h3" },
+          typography: { sm: "h2", xs: "h3", xl: "h1" },
         }}
       >
         About Me 🔎
@@ -34,7 +35,12 @@ const About = () => {
       <Stack
         direction="row"
         justifyContent="space-evenly"
-        sx={{ pt: "2em", pb: "4em", flexWrap: "wrap", rowGap: "4em" }}
+        sx={{
+          pt: { xs: "2em", xl: "5em" },
+          pb: "4em",
+          flexWrap: "wrap",
+          rowGap: "4em",
+        }}
       >
         <AboutCard
           image={HokieBird}

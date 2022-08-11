@@ -75,14 +75,17 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Box sx={{ minHeight: "100vh", backgroundColor: "#343434" }}>
+    <Box
+      textAlign="center"
+      sx={{ minHeight: "100vh", backgroundColor: "#343434" }}
+    >
       <Anchor id="projects" />
       <Typography
         className="page-title"
         gutterBottom
         sx={{
           color: "white",
-          typography: { sm: "h2", xs: "h3" },
+          typography: { sm: "h2", xs: "h3", xl: "h1" },
         }}
       >
         Personal Projects 🛠️

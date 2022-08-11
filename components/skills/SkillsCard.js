@@ -38,7 +38,7 @@ const SkillsCard = ({ name, image, objectFit, small, medium }) => {
         className="skills-image-text"
         elevation={10}
       >
-        <Typography>{name}</Typography>
+        <Typography sx={{ fontSize: { xl: "1.8em" } }}>{name}</Typography>
       </Paper>
     </Box>
   );

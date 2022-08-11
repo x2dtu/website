@@ -12,30 +12,42 @@ const AboutCard = ({ title, text, alt, image }) => {
     <Paper
       elevation={10}
       sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
         backgroundColor: colorScheme.backgroundColor,
         border: `3px solid ${colorScheme.outline}`,
         mx: { md: 0, sm: 2, xs: 2 },
+        minHeight: { xl: "45vh" },
       }}
       className="about-card"
     >
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        sx={{ textAlign: "center" }}
-      >
-        <Typography className="about-title" variant="h3">
-          {title}
-        </Typography>
-        <img alt={alt} src={image.src} className="card-image" />
+      <Stack width="100%">
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          sx={{ textAlign: "center" }}
+        >
+          <Typography
+            className="about-title"
+            sx={{ typography: { xl: "h2", xs: "h3" }, pl: { xl: "0.25em" } }}
+          >
+            {title}
+          </Typography>
+          <img alt={alt} src={image.src} className="card-image" />
+        </Stack>
+        <hr className="about-divider divider" />
       </Stack>
-      <hr className="about-divider divider" />
-      <Box>
+      <Box textAlign="center" my="auto">
         <Typography
           sx={{
             color: colorScheme.color,
+            fontSize: {
+              xl: "1.8em",
+              xs: "1.2em",
+            },
           }}
-          className="card-text"
         >
           {text}
         </Typography>

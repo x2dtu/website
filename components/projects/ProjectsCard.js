@@ -44,14 +44,8 @@ const ProjectsCard = ({ name, image, langImage, link, langAlt, objectFit }) => {
           justifyContent="space-between"
           pl={1.5}
         >
-          <Typography>{name}</Typography>
-          <img
-            src={langImage.src}
-            alt={langAlt}
-            // width="100px"
-            height="50px"
-            // objectFit="contain"
-          />
+          <Typography sx={{ fontSize: { xl: "1.8em" } }}>{name}</Typography>
+          <img src={langImage.src} alt={langAlt} className="project-image" />
         </Stack>
       </Paper>
     </Box>

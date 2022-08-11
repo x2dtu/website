@@ -11,11 +11,12 @@ const Experience = () => {
       sx={{
         backgroundColor: "white",
         minHeight: "100vh",
+        textAlign: "center",
       }}
     >
       <Anchor id="experience" />
       <Typography
-        sx={{ typography: { sm: "h2", xs: "h3" } }}
+        sx={{ typography: { sm: "h2", xs: "h3", xl: "h1" } }}
         className="page-title"
         gutterBottom
       >
@@ -24,7 +25,12 @@ const Experience = () => {
       <Stack
         direction="row"
         justifyContent="space-evenly"
-        sx={{ pb: "4em", pt: "1.5em", flexWrap: "wrap", rowGap: "4em" }}
+        sx={{
+          pb: "4em",
+          pt: { xs: "1.5em", xl: "5em" },
+          flexWrap: "wrap",
+          rowGap: "4em",
+        }}
       >
         <ExperienceCard
           image={VT}

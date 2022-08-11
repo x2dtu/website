@@ -53,20 +53,28 @@ const technologies = [
 
 const Skills = () => {
   return (
-    <Box sx={{ minHeight: "100vh", backgroundColor: "#290429" }}>
+    <Box
+      textAlign="center"
+      sx={{ minHeight: "100vh", backgroundColor: "#290429" }}
+    >
       <Anchor id="skills" />
       <Typography
         className="page-title"
         sx={{
           color: "white",
-          typography: { sm: "h2", xs: "h3" },
+          typography: { sm: "h2", xs: "h3", xl: "h1" },
         }}
         gutterBottom
       >
         Skills ⚙️
       </Typography>
       <Box className="skills-subtitle-container">
-        <Typography variant="h6" className="skills-subtitle">
+        <Typography
+          sx={{
+            typography: { xs: "h6", xl: "h4" },
+          }}
+          className="skills-subtitle"
+        >
           Languages
         </Typography>
       </Box>
@@ -101,7 +109,12 @@ const Skills = () => {
         </Grid>
       </Box>
       <Box className="skills-subtitle-container">
-        <Typography variant="h6" className="skills-subtitle">
+        <Typography
+          sx={{
+            typography: { xs: "h6", xl: "h4" },
+          }}
+          className="skills-subtitle"
+        >
           Technologies
         </Typography>
       </Box>
