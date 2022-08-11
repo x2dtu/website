@@ -65,19 +65,21 @@ const StaticDrawerAppBar = () => {
             <MenuIcon />
           </IconButton>
           {navItems.map((item) => (
-            <Button
-              key={item}
-              sx={{
-                color: "white",
-                display: { xs: "none", sm: "block" },
-                py: "1.25em",
-                width: "10em",
-                textAlign: "center",
-              }}
-              href={`/#${getID(item)}`}
-            >
-              {item}
-            </Button>
+            <Link href={`/#${getID(item)}`}>
+              <Button
+                key={item}
+                sx={{
+                  color: "white",
+                  display: { xs: "none", sm: "block" },
+                  py: "1.25em",
+                  width: "10em",
+                  textAlign: "center",
+                  fontSize: { xl: "1em" },
+                }}
+              >
+                {item}
+              </Button>
+            </Link>
           ))}
         </Toolbar>
       </AppBar>

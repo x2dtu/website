@@ -67,7 +67,7 @@ const About = () => {
           image={Tree}
           alt="Tree"
           text="When I'm not coding, I can often be found having fun with friends,
-                spending time with family, reading, and learning new programming
+                spending time with family, reading, sleeping, and learning new programming
                 languages. I'm a big fan of coding personal projects in my free time
                 which not only benefit my overall coding proficiency and knowledge
                 but also my enjoyment for the craft."
