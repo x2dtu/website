@@ -27,6 +27,22 @@ dark-blue {
   background-color: #2e4382;
 }
 
+.introduction {
+  height: 100vh;
+  background-position: 50% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: none) {
+  .introduction {
+    background-attachment: initial;
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -112,15 +128,40 @@ dark-blue {
   padding: 1em;
   padding-top: 0.5em;
   max-width: 55vh;
-  outline: 3px solid black;
+  position: relative;
+}
+
+.about-card::after {
+  position: absolute;
+  content: '';
+  left: -5px;
+  top: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 3px solid black;
+  border-radius: 5%;
+  background-color: transparent;
+  display: inherit;
 }
 
 .experience-card {
   border-radius: 5%;
   padding: 1em;
   padding-top: 0.5em;
-  /* max-width: 60vh; */
-  outline: 3px solid black;
+  position: relative;
+}
+
+.experience-card::after {
+  position: absolute;
+  content: '';
+  left: -5px;
+  top: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 3px solid black;
+  border-radius: 5%;
+  background-color: transparent;
+  display: inherit;
 }
 
 .skills-card {

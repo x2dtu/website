@@ -14,16 +14,10 @@ const Introduction = () => {
   const buttonClass = "about-title title-color title-buttons";
   return (
     <Box
-      height="100vh"
       sx={{
         backgroundImage: `url(${portrait.src})`,
-        backgroundPosition: "50% 20%",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
       }}
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
+      className="introduction"
     >
       <div style={{ position: "absolute", top: 0 }}>
         <Anchor id="home" />
