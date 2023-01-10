@@ -3,6 +3,8 @@ import React from "react";
 import Anchor from "../Anchor";
 import SkillsCard from "./SkillsCard";
 import Javascript from "../../public/images/javascript.webp";
+import Typescript from "../../public/images/typescript.png";
+import Go from "../../public/images/go.png";
 import ReactImg from "../../public/images/react.png";
 import Python from "../../public/images/python.png";
 import Java from "../../public/images/java.png";
@@ -14,6 +16,7 @@ import Git from "../../public/images/git.png";
 import Docker from "../../public/images/docker.png";
 import Linux from "../../public/images/linux.png";
 import Jupyter from "../../public/images/jupyter.png";
+import Next from "../../public/images/next.png";
 
 const languages = [
   {
@@ -28,10 +31,15 @@ const languages = [
   { name: "Java", picture: { image: Java, objectFit: "contain" } },
   { name: "C", picture: { image: C, objectFit: "contain", medium: true } },
   {
+    name: "Typescript",
+    picture: { image: Typescript, objectFit: "contain", small: true },
+  },
+  { name: "Go", picture: { image: Go, objectFit: "contain" } },
+  { name: "Rust", picture: { image: Rust, objectFit: "contain" } },
+  {
     name: "C++",
     picture: { image: CPlusPlus, objectFit: "contain", medium: true },
   },
-  { name: "Rust", picture: { image: Rust, objectFit: "contain" } },
   {
     name: "CSS",
     picture: { image: CSS, objectFit: "scale-down", small: true },
@@ -44,6 +52,10 @@ const technologies = [
   {
     name: "Linux CLI",
     picture: { image: Linux, objectFit: "scale-down", small: true },
+  },
+  {
+    name: "Next.js",
+    picture: { image: Next, objectFit: "scale-down", small: true },
   },
   {
     name: "Jupyter Notebooks",

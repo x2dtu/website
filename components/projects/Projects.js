@@ -9,6 +9,8 @@ import Java from "../../public/images/java.png";
 import ReactImg from "../../public/images/react.png";
 import Python from "../../public/images/python.png";
 import Rust from "../../public/images/rust.png";
+import Go from "../../public/images/go.png";
+import Next from "../../public/images/next.png";
 import portrait from "../../public/images/intro_pic.png";
 
 const projects = [
@@ -64,11 +66,29 @@ const projects = [
     objectFit: "contain",
   },
   {
+    name: "Minesweeper",
+    image:
+      "https://user-images.githubusercontent.com/82241006/211673872-4d7ebc29-6467-4e09-ab4c-d54306ed8c62.png",
+    link: "https://github.com/x2dtu/minesweeper",
+    langImage: ReactImg,
+    langAlt: "React-TypeScript",
+    objectFit: "cover",
+  },
+  {
+    name: "Wordle",
+    image:
+      "https://user-images.githubusercontent.com/82241006/211674970-5181543b-44a9-4ff3-8b6b-8637527441e1.png",
+    link: "https://github.com/x2dtu/wordle",
+    langImage: Go,
+    langAlt: "Go",
+    objectFit: "scale-down",
+  },
+  {
     name: "This Website!",
     image: portrait.src,
     link: "https://github.com/x2dtu/website",
-    langImage: ReactImg,
-    langAlt: "React",
+    langImage: Next,
+    langAlt: "Next",
     objectFit: "contain",
   },
 ];
