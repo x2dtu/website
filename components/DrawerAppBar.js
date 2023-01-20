@@ -103,6 +103,9 @@ const DrawerAppBar = () => {
                   width: "10em",
                   textAlign: "center",
                   fontSize: { xl: "1em" },
+                  textDecoration: "underline",
+                  textUnderlineOffset: 5,
+                  textDecorationColor: "rgba(255, 255, 255, 0.3)",
                 }}
                 className={mobileDrawerTitle == item ? "focused" : null}
               >
