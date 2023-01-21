@@ -63,9 +63,8 @@ const StaticDrawerAppBar = () => {
             <MenuIcon />
           </IconButton>
           {navItems.map((item) => (
-            <Link href={`/#${getID(item)}`}>
+            <Link href={`/#${getID(item)}`} key={item}>
               <Button
-                key={item}
                 sx={{
                   color: "white",
                   display: { xs: "none", sm: "block" },
@@ -75,7 +74,7 @@ const StaticDrawerAppBar = () => {
                   fontSize: { xl: "1em" },
                   textDecoration: "underline",
                   textUnderlineOffset: 5,
-                  textDecorationColor: "rgba(255, 255, 255, 0.3)",
+                  textDecorationColor: "rgba(255, 255, 255, 0.15)",
                 }}
               >
                 {item}

@@ -17,6 +17,7 @@ import Docker from "../../public/images/docker.png";
 import Linux from "../../public/images/linux.png";
 import Jupyter from "../../public/images/jupyter.png";
 import Next from "../../public/images/next.png";
+import Sqlite from "../../public/images/sqlite.png";
 
 const languages = [
   {
@@ -50,12 +51,16 @@ const technologies = [
   { name: "Git", picture: { image: Git, objectFit: "contain", small: true } },
   { name: "Docker", picture: { image: Docker, objectFit: "contain" } },
   {
-    name: "Linux CLI",
-    picture: { image: Linux, objectFit: "scale-down", small: true },
-  },
-  {
     name: "Next.js",
     picture: { image: Next, objectFit: "scale-down", small: true },
+  },
+  {
+    name: "SQLite",
+    picture: { image: Sqlite, objectFit: "contain", small: true },
+  },
+  {
+    name: "Linux CLI",
+    picture: { image: Linux, objectFit: "scale-down", small: true },
   },
   {
     name: "Jupyter Notebooks",
