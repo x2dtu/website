@@ -38,9 +38,9 @@ const About = () => {
         <AboutCard
           image={HokieBird}
           alt="Hokie Bird"
-          text="I am a 20-year-old junior Virginia Tech student studying
+          text="I am a 21-year-old junior Virginia Tech student studying
                     computer science from Midlothian, Virginia where I grew up with my loving and
-                    supportive family and friends. I am planning to graduate with my
+                    supportive family and friends. I graduated with my
                     Bachelor's Degree in Spring 2023 and will stay an extra year
                     to complete my Master's in Science."
           title="Who I am"
@@ -60,7 +60,7 @@ const About = () => {
           image={Tree}
           alt="Tree"
           text="When I'm not coding, I can often be found having fun with friends,
-                spending time with family, reading, sleeping, and learning new programming
+                spending time with family, playing chess, reading, working out, and learning new programming
                 languages. I'm a big fan of coding personal projects in my free time
                 which not only benefit my overall coding proficiency and knowledge
                 but also my enjoyment for the craft."

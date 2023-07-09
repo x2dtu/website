@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import VT from "../../public/images/vt.png";
 import GarminLogo from "../../public/images/garmin-logo.png";
+import AWS from "../../public/images/aws.png";
 import ExperienceCard from "./ExperienceCard";
 import Anchor from "../Anchor";
 
@@ -62,6 +63,20 @@ const Experience = () => {
           secondary="Embedded Software Engineer Intern"
           href="experiences/garmin-intern"
           dates="Summer 2022"
+        />
+        <ExperienceCard
+          image={AWS}
+          alt="Amazon"
+          text="I worked at AWS Cloudfront for my second internship where I integrated automatic 
+                querying of edge location logs into a service used to expedite ticket resolution. 
+                My design utilized parallelized step functions, 3 cohesive lambdas, and various 
+                Dynamo DBs and S3 buckets all deployed using the AWS Cloud Development Kit (CDK). 
+                Overall, my design saves Cloudfront operators up to 30 minutes of time when tackling 
+                edge location & cache outages and issues."
+          title="Amazon"
+          secondary="AWS Cloudfront SDE Intern"
+          href="experiences/garmin-intern"
+          dates="Summer 2023"
         />
       </Stack>
     </Box>
